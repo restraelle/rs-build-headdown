@@ -1,7 +1,7 @@
 /*
 =====================================================
 OMEGA19 Page
-Register
+Contact
 =====================================================
 */
 
@@ -10,9 +10,9 @@ import Template from "../Template";
 import { Link } from "react-router-dom";
 
 /* STATIC RESOURCES */
-import logo from "../../static/img/logo.png";
+import dark_logo from "../../static/img/dark-logo.png";
 
-export default class Register extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,13 +43,31 @@ export default class Register extends React.Component {
       <Template>
         <div className="grid-container page-content signup-wrapper">
           <div className="grid-x">
-            <div className="small-12 large-6 cell content-wrap">
+            <div className="small-12 large-8 large-offset-2 cell content-wrap">
               <section className="signup login">
                 <form>
                   <div className="grid-container signup-grid">
                     <div className="grid-x grid-padding-x">
                       <div className="large-12 cell">
-                        <h3 className="form-header">Create Account</h3>
+                        <img
+                          src={dark_logo}
+                          className="contact-logo"
+                          alt="Head Down Firearms"
+                        />
+
+                        <h3 className="form-header text-center">Contact Us</h3>
+                        <p>
+                          We're happy to answer questions or help you with
+                          exchanges or warranty issues. Please fill out the form
+                          below if you need assistance.
+                        </p>
+                        <p>
+                          OFFICE: <a href="tel:7704857015">(770) 485-7015</a>
+                          <br />
+                          333 Butler Industrial Drive
+                          <br />
+                          Dallas, GA 30132
+                        </p>
                       </div>
                       <div className="large-12 cell">
                         <input
@@ -86,10 +104,42 @@ export default class Register extends React.Component {
 
                       <div className="large-12 cell">
                         <input
-                          type="password"
-                          id="password"
-                          name="password"
-                          placeholder="Password"
+                          type="text"
+                          id="order_number"
+                          name="order_number"
+                          placeholder="Order Number"
+                          required
+                          onChange={this.handleChange}
+                        />
+                      </div>
+
+                      <div className="large-12 cell">
+                        <input
+                          type="text"
+                          id="company_name"
+                          name="company_name"
+                          placeholder="Company Name"
+                          required
+                          onChange={this.handleChange}
+                        />
+                      </div>
+
+                      <div className="large-12 cell">
+                        <input
+                          type="text"
+                          id="rma_number"
+                          name="rma_number"
+                          placeholder="RMA Number"
+                          required
+                          onChange={this.handleChange}
+                        />
+                      </div>
+
+                      <div className="large-12 cell">
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="Message"
                           required
                           onChange={this.handleChange}
                         />
@@ -98,25 +148,17 @@ export default class Register extends React.Component {
                       <div className="large-12 cell">
                         <Link to={`/`}>
                           <div
-                            id="loginBtn"
+                            id="submitContact"
                             className="button expanded cta-main"
                           >
-                            Create
+                            SUBMIT
                           </div>
-                        </Link>
-                      </div>
-                      <div style={styles} className="large-12 cell">
-                        <Link to={`/`}>
-                          <div id="resetBtn">Return to Store</div>
                         </Link>
                       </div>
                     </div>
                   </div>
                 </form>
               </section>
-            </div>
-            <div className="large-6 cell content-wrap image-container login-image">
-              <img src={logo} alt="Log into Head Down Firearms" />
             </div>
           </div>
         </div>
