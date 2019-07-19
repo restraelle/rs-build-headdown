@@ -6,6 +6,7 @@ Footer
 */
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -27,41 +28,55 @@ export default class Footer extends React.Component {
           </p>
         </div>
         <div className="footer-chunk desktop-third mobile-whole footer-links">
-          <a href="">Blog</a>
-          <a href="">Shop</a>
-          <a href="">Support</a>
-          <a href="">About</a>
+          <Link to={`/`}>Shop</Link>
+          <Link to={`/`}>Support</Link>
+          <Link to={`/`}>About</Link>
         </div>
         <div className="footer-chunk desktop-third mobile-whole">
           <h2>Follow Us</h2>
           <ul className="footer-social-links">
             <li>
-              <a className="footer-social-facebook" href="">
+              <a
+                className="footer-social-facebook"
+                href="https://www.facebook.com/headdownarms/"
+                target="_blank"
+              >
                 <i className="fab fa-facebook-f"></i>
               </a>
             </li>
             <li>
-              <a className="footer-social-twitter" href="">
+              <a
+                className="footer-social-twitter"
+                href="https://twitter.com/headdownarms"
+                target="_blank"
+              >
                 <i className="fab fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a className="footer-social-instagram" href="">
+              <a
+                className="footer-social-instagram"
+                href="https://www.instagram.com/headdownarms/"
+                target="_blank"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
             </li>
             <li>
-              <a className="footer-social-youtube" href="">
-                <i className="fab fa-youtube"></i>
+              <a
+                className="footer-social-linkedin"
+                href="https://www.linkedin.com/company/headdownarms/"
+                target="_blank"
+              >
+                <i className="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a className="footer-social-snapchat" href="">
-                <i className="fab fa-snapchat"></i>
-              </a>
-            </li>
-            <li>
-              <a className="footer-social-pinterest" href="">
+              <a
+                className="footer-social-pinterest"
+                href="https://www.pinterest.com/headdownarms/"
+                target="_blank"
+              >
                 <i className="fab fa-pinterest"></i>
               </a>
             </li>

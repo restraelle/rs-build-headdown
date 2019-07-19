@@ -453,7 +453,7 @@ div {
   }
 
   a {
-    padding: 9px;
+    padding: 12px;
     border-radius: 100%;
     background-color: $colorPrimary;
     width: 50px;
@@ -467,7 +467,7 @@ div {
   }
 
   i {
-    font-size: 30px;
+    font-size: 28px;
 
     &:hover {
       color: white;
@@ -1239,36 +1239,28 @@ footer #mce-EMAIL {
 
 /*================ FAQ Page ================*/
 .faq-container {
-  background-color: #161415;
-  color: white;
   border-radius: 3px;
   margin-top: 2em;
   margin-bottom: 5em;
-  box-shadow: 0 5px 10px #222;
 
   .faq-wrapper {
     padding: 15px;
     border-radius: 3px;
   }
 
-  h1 {
-    color: white;
-    background-color: $colorPrimary;
-    border-radius: 3px 3px 0 0;
-  }
-
   h2 {
     text-transform: uppercase;
     margin-bottom: 15px;
+    color: $colorPrimary;
+    border-bottom: 2px solid $colorPrimary;
+    margin-bottom: 20px;
+    display: inline-block;
   }
 
   .faq-item-container {
     border-radius: 3px;
     padding: 15px;
-    margin-bottom: 15px;
-
-    &:nth-child(even) {
-      background-color: $colorPrimary;
-    }
+    margin-bottom: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 }

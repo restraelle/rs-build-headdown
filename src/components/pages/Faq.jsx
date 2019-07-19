@@ -97,8 +97,11 @@ class FAQ extends Component {
                     <p>
                       If you have additional questions or require more
                       information about our Privacy Policy, do not hesitate to
-                      contact us through email at hdsales@hdfirearms.com. Click
-                      here to read the full privacy policy.
+                      contact us through email at{" "}
+                      <a href="mailto:hdsales@hdfirearms.com">
+                        hdsales@hdfirearms.com
+                      </a>
+                      . Click here to read the full privacy policy.
                     </p>
                   </div>
                 </div>
