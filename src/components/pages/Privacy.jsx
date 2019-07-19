@@ -32,7 +32,11 @@ class Privacy extends Component {
                 <p>
                   If you have additional questions or require more information
                   about our Privacy Policy, do not hesitate to contact us
-                  through email at hdsales@hdfirearms.com.
+                  through email at{" "}
+                  <a href="mailto:hdsales@hdfirearms.com">
+                    hdsales@hdfirearms.com
+                  </a>
+                  .
                 </p>
               </div>
 
