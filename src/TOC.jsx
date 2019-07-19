@@ -26,6 +26,7 @@ import Warranty from "./components/pages/Warranty";
 import Privacy from "./components/pages/Privacy";
 import Cerakote from "./components/pages/Cerakote";
 import ShippingReturns from "./components/pages/ShippingReturns";
+import BecomeDealer from "./components/pages/BecomeDealer";
 
 export default function TOC() {
   return (
@@ -44,6 +45,7 @@ export default function TOC() {
       <Route path="/shipping-returns" exact component={ShippingReturns} />
       <Route path="/privacy" exact component={Privacy} />
       <Route path="/cerakote" exact component={Cerakote} />
+      <Route path="/become-a-dealer" exact component={BecomeDealer} />
       <Route path="/checkout" exact component={Checkout} />
     </div>
   );
