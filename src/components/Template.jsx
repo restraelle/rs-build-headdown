@@ -40,7 +40,7 @@ class Template extends React.Component {
           <NavigationItem title="Privacy" link="/privacy" />
           <NavigationItem
             title="Shipping and Returns"
-            link="/shipping-and-returns"
+            link="/shipping-returns"
           />
         </Navigation>
 
