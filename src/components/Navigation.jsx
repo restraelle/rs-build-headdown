@@ -78,7 +78,7 @@ export default class Navigation extends React.Component {
             <div className="nav-bar right">
               <ul>
                 <li>
-                  <Link to={`/signup`}>Sign Up</Link>
+                  <Link to={`/register`}>Sign Up</Link>
                 </li>
                 <li>
                   <Link to={`/login`}>Login</Link>

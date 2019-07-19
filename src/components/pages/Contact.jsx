@@ -1,7 +1,7 @@
 /*
 =====================================================
 OMEGA19 Page
-Register
+Contact
 =====================================================
 */
 
@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../../static/img/logo.png";
 
-export default class Register extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -40,7 +40,7 @@ export default class Register extends React.Component {
 
     return (
       <Template>
-        <div className="grid-container page-content signup-wrapper">
+        <div className="grid-container page-content">
           <div className="grid-x">
             <div className="small-12 large-6 cell content-wrap">
               <section className="signup login">

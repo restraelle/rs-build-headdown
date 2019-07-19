@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 /* STATIC RESOURCES */
 import logo from "../../static/img/logo.png";
 
-export default class Checkout extends React.Component {
+export default class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

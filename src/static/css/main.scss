@@ -225,6 +225,10 @@ div {
   border-width: 0px 0px 0px 3px;
   padding: 0px 0px 0px 8px;
   color: $colorPrimary;
+
+  a {
+    color: $colorPrimary;
+  }
 }
 
 .section {
@@ -1005,8 +1009,9 @@ h2 {
 
 /*================ Signup ================*/
 .page-content {
-  height: 500px;
+  // height: 500px;
   margin-bottom: 5em;
+  margin-top: 2em;
 }
 
 .hero-banner {
@@ -1042,7 +1047,6 @@ h2 {
 }
 
 .signup-page .content-wrap {
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
