@@ -42,6 +42,7 @@ class Template extends React.Component {
             title="Shipping and Returns"
             link="/shipping-returns"
           />
+          <NavigationItem title="Cerakote" link="/cerakote" />
         </Navigation>
 
         {this.props.children}

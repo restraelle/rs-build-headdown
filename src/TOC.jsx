@@ -21,8 +21,10 @@ import Login from "./components/pages/Login";
 import ForgotPassword from "./components/pages/ForgotPassword";
 import Contact from "./components/pages/Contact";
 import Faq from "./components/pages/Faq";
+import About from "./components/pages/About";
 import Warranty from "./components/pages/Warranty";
 import Privacy from "./components/pages/Privacy";
+import Cerakote from "./components/pages/Cerakote";
 import ShippingReturns from "./components/pages/ShippingReturns";
 
 export default function TOC() {
@@ -37,9 +39,11 @@ export default function TOC() {
       <Route path="/forgot" exact component={ForgotPassword} />
       <Route path="/contact" exact component={Contact} />
       <Route path="/faq" exact component={Faq} />
+      <Route path="/about" exact component={About} />
       <Route path="/warranty" exact component={Warranty} />
       <Route path="/shipping-returns" exact component={ShippingReturns} />
       <Route path="/privacy" exact component={Privacy} />
+      <Route path="/cerakote" exact component={Cerakote} />
       <Route path="/checkout" exact component={Checkout} />
     </div>
   );
