@@ -12,9 +12,6 @@ import Template from "../Template";
 import for_life_image from "../../static/img/for-life.png";
 
 class Warranty extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <Template>

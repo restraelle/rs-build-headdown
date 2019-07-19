@@ -1228,6 +1228,10 @@ footer #mce-EMAIL {
   text-transform: uppercase;
 }
 
+.cta-main:hover {
+  background-color: darken($colorPrimary, 10%);
+}
+
 /*================ Contact Page ================*/
 .contact-logo {
   display: block;
@@ -1311,5 +1315,39 @@ footer #mce-EMAIL {
     margin-top: 20px;
     color: $colorPrimary;
     font-size: 20px;
+  }
+}
+
+/*================ Edits to home page ================*/
+/* hero */
+.hero-basic-content {
+  h4,
+  h1 {
+    text-shadow: 0 0 10px #444;
+  }
+
+  .button-hero {
+    box-shadow: 0 0 10px #444;
+
+    &:hover {
+      background-color: $colorPrimary;
+      color: white;
+    }
+  }
+}
+
+/* centering 3 main collection titles */
+.CollectionSpotlightItem {
+  .featured-collections-box {
+    position: relative;
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      text-shadow: 0 0 7px #222;
+    }
   }
 }

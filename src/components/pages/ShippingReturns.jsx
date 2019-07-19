@@ -10,9 +10,6 @@ import Template from "../Template";
 import { Link } from "react-router-dom";
 
 class ShippingReturns extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <Template>

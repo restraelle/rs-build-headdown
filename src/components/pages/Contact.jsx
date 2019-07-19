@@ -35,10 +35,6 @@ export default class Contact extends React.Component {
   }
 
   render() {
-    let styles = {
-      textAlign: "right"
-    };
-
     return (
       <Template>
         <div className="grid-container page-content signup-wrapper">
