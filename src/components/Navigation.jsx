@@ -5,31 +5,32 @@ Navigation Bar
 =====================================================
 */
 
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 /* STATIC RESOURCES */
-import logo from '../static/img/logo.png';
+import logo from "../static/img/logo.png";
 
 export default class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       solidStyling: {
-        position: 'relative'
+        position: "relative"
       },
       searchBar: this.props.disableSearchBar ? false : true,
-      stylingHeader: (this.props.solid ? "header header-solid" : "header") + (this.props.sticky ? " sticky" : ""),
+      stylingHeader:
+        (this.props.solid ? "header header-solid" : "header") +
+        (this.props.sticky ? " sticky" : ""),
       showMenu: false
-    }
-    if(this.props.searchBar == false) {
+    };
+    if (this.props.searchBar == false) {
       this.setState({
         searchBar: false
       });
     }
   }
-  componentDidMount() {
-    
-  }
+  componentDidMount() {}
 
   handleMenuClick() {
     const currentStatus = this.state.showMenu;
@@ -39,7 +40,7 @@ export default class Navigation extends React.Component {
   }
 
   renderSearchBar() {
-    if(this.state.searchBar) {
+    if (this.state.searchBar) {
       return (
         <div className="search-bar">
           <input placeholder="Search..." type="text"></input>
@@ -50,12 +51,10 @@ export default class Navigation extends React.Component {
   }
 
   renderMobileMenu() {
-    if(this.state.showMenu) {
+    if (this.state.showMenu) {
       return (
         <div className="nav-mobile-menu">
-          <ul>
-            {this.props.children}
-          </ul>
+          <ul>{this.props.children}</ul>
         </div>
       );
     }
@@ -65,38 +64,58 @@ export default class Navigation extends React.Component {
     return (
       <div className="Navigation">
         <div className="nav-desktop">
-          <div className={this.props.sticky ? "color-bar sticky" : "color-bar"}></div>
+          <div
+            className={this.props.sticky ? "color-bar sticky" : "color-bar"}
+          ></div>
           <div className={this.state.stylingHeader}>
-              <a href="/">
-                  <img id="Logo" src={logo}/>
-              </a>
-              <div className="nav-bar left">
-                  {this.renderSearchBar()}
-                  <ul>
-                      {this.props.children}
-                  </ul>
-              </div>  
-              <div className="nav-bar right">
-                  <ul>
-                      <a><li>Sign Up</li></a>
-                      <a><li>Login</li></a>
-                      <a href="/cart"><li><i className="fas fa-shopping-cart"></i></li></a>
-                  </ul>
-              </div>  
+            <a href="/">
+              <img id="Logo" src={logo} />
+            </a>
+            <div className="nav-bar left">
+              {this.renderSearchBar()}
+              <ul>{this.props.children}</ul>
+            </div>
+            <div className="nav-bar right">
+              <ul>
+                <li>
+                  <Link to={`/signup`}>Sign Up</Link>
+                </li>
+                <li>
+                  <Link to={`/login`}>Login</Link>
+                </li>
+                <li>
+                  <Link to={`/cart`}>
+                    <i className="fas fa-shopping-cart"></i>
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        
-        <div className={"nav-mobile" + (this.props.solid ? " nav-mobile-solid" : "")}>
-          <div className={this.props.sticky ? "color-bar sticky" : "color-bar"}></div>
+
+        <div
+          className={
+            "nav-mobile" + (this.props.solid ? " nav-mobile-solid" : "")
+          }
+        >
+          <div
+            className={this.props.sticky ? "color-bar sticky" : "color-bar"}
+          ></div>
           <div className="nav-mobile-content">
             <a href="/">
-              <img id="Logo" src={logo}/>
+              <img id="Logo" src={logo} />
             </a>
-            <i onClick={() => this.handleMenuClick()} className={"fas fa-bars nav-hamburger" + (this.state.showMenu ? " nav-hamburger-active" : "")}></i>
+            <i
+              onClick={() => this.handleMenuClick()}
+              className={
+                "fas fa-bars nav-hamburger" +
+                (this.state.showMenu ? " nav-hamburger-active" : "")
+              }
+            ></i>
           </div>
           {this.renderMobileMenu()}
         </div>
       </div>
     );
-  } 
+  }
 }

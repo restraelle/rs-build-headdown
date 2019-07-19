@@ -8,6 +8,8 @@ Login
 import React from "react";
 import Template from "../Template";
 import { Link } from "react-router-dom";
+
+/* STATIC RESOURCES */
 import logo from "../../static/img/logo.png";
 
 export default class Checkout extends React.Component {
