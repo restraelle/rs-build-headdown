@@ -414,10 +414,6 @@ div {
   min-height: 400px;
 }
 
-.footer i {
-  font-size: 35px;
-  margin: 0px 20px 0px 0px;
-}
 .footer h2 {
   margin: 0px 0px 10px 0px;
 }
@@ -434,10 +430,51 @@ div {
   display: inline-block;
   margin: 0px 0px 15px 0px;
   transition: all 0.2s;
+
+  &:hover {
+    color: $colorPrimary;
+  }
+
+  &:focus,
+  &:visited {
+    color: white;
+  }
 }
-.footer a:hover {
-  color: $colorPrimary;
+
+.footer-social-links {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+
+  li {
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+    text-align: center;
+  }
+
+  a {
+    padding: 9px;
+    border-radius: 100%;
+    background-color: $colorPrimary;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: darken($colorPrimary, 10%);
+    }
+  }
+
+  i {
+    font-size: 30px;
+
+    &:hover {
+      color: white;
+    }
+  }
 }
+
 .footer-links a {
   display: block;
 }
@@ -1082,6 +1119,33 @@ h2 {
   }
 }
 
+.signup-wrapper textarea {
+  border: none;
+  box-shadow: none;
+  border-bottom: 2px solid #edf0f5;
+  background-color: transparent;
+  margin-bottom: 30px;
+  position: relative;
+  min-height: 100px;
+
+  &:focus {
+    border-bottom: 2px solid $colorPrimary;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  &:focus:-moz-placeholder {
+    color: transparent;
+  }
+  &:focus::-moz-placeholder {
+    color: transparent;
+  }
+  &:focus:-ms-input-placeholder {
+    color: transparent;
+  }
+}
+
 footer #mce-EMAIL {
   background-color: white !important;
 }
@@ -1117,7 +1181,7 @@ footer #mce-EMAIL {
 
   .page-content {
     height: 100%;
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 
   .forgot-password-page .content-wrap {
@@ -1171,4 +1235,40 @@ footer #mce-EMAIL {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+/*================ FAQ Page ================*/
+.faq-container {
+  background-color: #161415;
+  color: white;
+  border-radius: 3px;
+  margin-top: 2em;
+  margin-bottom: 5em;
+  box-shadow: 0 5px 10px #222;
+
+  .faq-wrapper {
+    padding: 15px;
+    border-radius: 3px;
+  }
+
+  h1 {
+    color: white;
+    background-color: $colorPrimary;
+    border-radius: 3px 3px 0 0;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  .faq-item-container {
+    border-radius: 3px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    &:nth-child(even) {
+      background-color: $colorPrimary;
+    }
+  }
 }

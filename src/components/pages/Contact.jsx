@@ -104,10 +104,42 @@ export default class Contact extends React.Component {
 
                       <div className="large-12 cell">
                         <input
-                          type="password"
-                          id="password"
-                          name="password"
-                          placeholder="Password"
+                          type="text"
+                          id="order_number"
+                          name="order_number"
+                          placeholder="Order Number"
+                          required
+                          onChange={this.handleChange}
+                        />
+                      </div>
+
+                      <div className="large-12 cell">
+                        <input
+                          type="text"
+                          id="company_name"
+                          name="company_name"
+                          placeholder="Company Name"
+                          required
+                          onChange={this.handleChange}
+                        />
+                      </div>
+
+                      <div className="large-12 cell">
+                        <input
+                          type="text"
+                          id="rma_number"
+                          name="rma_number"
+                          placeholder="RMA Number"
+                          required
+                          onChange={this.handleChange}
+                        />
+                      </div>
+
+                      <div className="large-12 cell">
+                        <textarea
+                          id="message"
+                          name="message"
+                          placeholder="Message"
                           required
                           onChange={this.handleChange}
                         />
@@ -116,7 +148,7 @@ export default class Contact extends React.Component {
                       <div className="large-12 cell">
                         <Link to={`/`}>
                           <div
-                            id="loginBtn"
+                            id="submitContact"
                             className="button expanded cta-main"
                           >
                             SUBMIT
