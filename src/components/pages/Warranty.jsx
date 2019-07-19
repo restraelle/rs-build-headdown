@@ -13,11 +13,7 @@ class Warranty extends Component {
     super(props);
   }
   render() {
-    return (
-      <Template>
-        <
-      </Template>
-    );
+    return <Template></Template>;
   }
 }
 
