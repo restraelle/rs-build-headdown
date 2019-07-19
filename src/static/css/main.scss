@@ -355,6 +355,12 @@ div {
   padding: 0px 25px 25px 25px;
   box-sizing: border-box;
   transition: all 0.25s;
+
+  a:hover,
+  a:focus,
+  a:visited {
+    color: #0a0a0a;
+  }
 }
 .product-item-box {
   margin: 20px;
