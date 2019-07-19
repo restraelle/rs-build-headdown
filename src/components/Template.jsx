@@ -31,7 +31,7 @@ class Template extends React.Component {
       <div className="Application">
         <Navigation solid={!this.props.index}>
           <NavigationItem title="Shop" link="/collection/test" />
-          // <NavigationItem title="Blog" link="/blog" />
+          {/* <NavigationItem title="Blog" link="/blog" /> */}
           <NavigationItem title="Support" link="/support" />
           <NavigationItem title="About" link="/about" />
           <NavigationItem title="Contact" link="/contact" />

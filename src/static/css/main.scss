@@ -1164,48 +1164,11 @@ footer #mce-EMAIL {
   text-transform: uppercase;
 }
 
-/*================ Error Page ================*/
-.error-page .page-content {
-  background: linear-gradient(to bottom, $colorPrimary, #f7c23c);
-  max-width: 100%;
-}
-
-.error-page .content-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
-}
-
-.error-page .error-container {
-  background-color: white;
-  width: 300px;
-  min-height: 300px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s;
-}
-
-.error-page .error-container h3 {
-  line-height: 1.3;
-}
-
-.error-page .error-container h1 {
-  font-size: 107px;
-  font-weight: bold;
-  background: -webkit-linear-gradient($colorPrimary, rgba(235, 80, 98, 0.5));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  line-height: 1.3;
-}
-
-@media (min-width: 640px) {
-  .error-page .error-container {
-    width: 580px;
-  }
+/*================ Contact Page ================*/
+.contact-logo {
+  display: block;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
