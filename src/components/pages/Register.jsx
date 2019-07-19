@@ -116,7 +116,7 @@ export default class Register extends React.Component {
               </section>
             </div>
             <div className="large-6 cell content-wrap image-container login-image">
-              <img src={logo} alt="Log into Head Down Firearms" />
+              <img src={logo} alt="Create Account For Head Down Firearms" />
             </div>
           </div>
         </div>

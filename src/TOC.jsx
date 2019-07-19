@@ -20,6 +20,7 @@ import Register from "./components/pages/Register";
 import Login from "./components/pages/Login";
 import Contact from "./components/pages/Contact";
 import FAQ from "./components/pages/Faq";
+import Warranty from "./components/pages/Warranty";
 
 export default function TOC() {
   return (
@@ -32,6 +33,7 @@ export default function TOC() {
       <Route path="/login" exact component={Login} />
       <Route path="/contact" exact component={Contact} />
       <Route path="/faq" exact component={FAQ} />
+      <Route path="/warranty" exact component={Warranty} />
       <Route path="/checkout" exact component={Checkout} />
     </div>
   );
