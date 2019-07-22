@@ -39,11 +39,11 @@ export default class Index extends React.Component {
   render() {
     return (
       <Template index>
-        <HeroBasic image={Hero2} heading="Head Down Firearms" subheading="Est. 2013" buttonText="shop now" buttonLink="http://www.google.com/"/>
+        <HeroBasic image={Hero2} heading="Head Down Firearms" subheading="Est. 2013" buttonText="shop now" buttonLink="/"/>
         
         <CollectionSpotlight>
-          <CollectionSpotlightItem title="Rifle Parts" image={CollectionSpotlightItem2} center/>
-          <CollectionSpotlightItem title="Skins" image={CollectionSpotlightItem3}/>
+          <CollectionSpotlightItem title="Rifle Parts" image={CollectionSpotlightItem2} link="/collection/all"/>
+          <CollectionSpotlightItem title="Skins" image={CollectionSpotlightItem3} center/>
           <CollectionSpotlightItem title="Sights" image={CollectionSpotlightItem1}/>
         </CollectionSpotlight>
 
@@ -54,7 +54,7 @@ export default class Index extends React.Component {
           <div></div>
         </FeaturedProducts>
 
-        <HeroBasic short image={Hero1} heading="Built with React" subheading="Super customizable, yet lightweight."/>
+        <HeroBasic short image={Hero1} heading="HD-15 Tactical Enhanced Patrol Rifle" subheading='14.5" NON-NFA'/>
       </Template>
     );
   }

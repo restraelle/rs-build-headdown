@@ -35,8 +35,13 @@ export default class Footer extends React.Component {
         </div>
         <div className="footer-chunk desktop-third mobile-whole footer-links">
           <Link to={`/`}>Shop</Link>
-          <Link to={`/`}>Support</Link>
-          <Link to={`/`}>About</Link>
+          <Link to={`/about`}>About</Link>
+          <Link to={`/contact`}>Contact</Link>
+          <Link to={`/faq`}>FAQ</Link>
+          <Link to={`/warranty`}>Warranty</Link>
+          <Link to={`/privacy`}>Privacy</Link>
+          <Link to={`/shipping-returns`}>Shipping and Returns</Link>
+          <Link to={`/cerakote`}>Cerakote</Link>
         </div>
         <div className="footer-chunk desktop-third mobile-whole">
           <h2>Follow Us</h2>

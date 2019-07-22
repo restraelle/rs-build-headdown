@@ -101,6 +101,17 @@ div {
   background-color: transparent;
   color: white;
   width: 100%;
+  height: auto;
+  padding: 0;
+  line-height: 0;
+  font-size: 13px;
+  top: 2px;
+  position: relative;
+}
+.search-bar input:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border-style: none;
 }
 .search-bar input::placeholder {
   color: white;
@@ -300,6 +311,7 @@ div {
 }
 .button-hero {
   margin: 10px 0px 0px 0px;
+
 }
 .button-contrast {
   background-color: #330505;
@@ -403,6 +415,7 @@ div {
   text-align: center;
   user-select: none;
   -moz-user-select: none;
+  padding: 10px 0px 0px 0px;
 }
 .product-item__price {
   color: grey;
@@ -424,7 +437,6 @@ div {
   margin: 0px 0px 10px 0px;
 }
 .footer h4 {
-  text-transform: uppercase;
   margin: 10px 0px;
 }
 
@@ -1401,11 +1413,11 @@ footer #mce-EMAIL {
 .hero-basic-content {
   h4,
   h1 {
-    text-shadow: 0 0 10px #444;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
   .button-hero {
-    box-shadow: 0 0 10px #444;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
     &:hover {
       background-color: $colorPrimary;
