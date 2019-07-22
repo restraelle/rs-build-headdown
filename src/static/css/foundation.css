@@ -2277,9 +2277,9 @@ h6, .h6 {
 
 @media print, screen and (min-width: 40em) {
   h1, .h1 {
-    font-size: 3rem; }
+    font-size: 2.3rem; }
   h2, .h2 {
-    font-size: 2.5rem; }
+    font-size: 2.1rem; }
   h3, .h3 {
     font-size: 1.9375rem; }
   h4, .h4 {

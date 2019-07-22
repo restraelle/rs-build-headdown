@@ -9,10 +9,6 @@ import React from "react";
 import Template from "../Template";
 
 export default class Checkout extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     document.body.classList.add("checkout-page");
   }

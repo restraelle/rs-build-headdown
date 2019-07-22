@@ -38,7 +38,9 @@ export default class Product extends React.Component {
 
                         <label htmlFor="Quantity">Quantity</label>
                         <input id="Quantity" type="number" min={1} max={100} value={1}/>
-                        <div id="AddToCart" className="button">Add to Cart</div>
+                        <a href="/cart">
+                            <div id="AddToCart" className="button">Add to Cart</div>
+                        </a>
                     </div>
 
                     <div className="clearfix"></div>
@@ -49,10 +51,12 @@ export default class Product extends React.Component {
                             <p>We have no limits to our world. We're only limited by our imagination. We don't really know where this goes - and I'm not sure we really care. We wash our brush with odorless thinner. Just pretend you are a whisper floating across a mountain. Let's have a happy little tree in here. We don't have to be committed. We are just playing here.</p>
                         </TabsPage>
                         <TabsPage title="Specification">
-                            <h1>This is the not price price.</h1>
+                            <h1>Insert Specifications Here</h1>
                         </TabsPage>
                         <TabsPage title="Support">
                             <h1>I'm here for you.</h1>
+                            <p>These trees are so much fun. I get started on them and I have a hard time stopping. In life you need colors. Very easy to work these to death. Just think about these things in your mind - then bring them into your world. Poor old tree.</p>
+                            <p>This piece of canvas is your world. I'm going to mix up a little color. We’ll use Van Dyke Brown, Permanent Red, and a little bit of Prussian Blue. Maybe there was an old trapper that lived out here and maybe one day he went to check his beaver traps, and maybe he fell into the river and drowned. Of course he's a happy little stone, cause we don't have any other kind.</p>
                         </TabsPage>
                         <TabsPage title="Downloads">
                             <h1>Choose a platform</h1>

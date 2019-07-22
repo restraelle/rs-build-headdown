@@ -21,16 +21,27 @@ export default class Footer extends React.Component {
             <h4>Contact Us</h4>
           </b>
           <p>
-            Phone: <span className="italic">770.485.7015</span>
+            Phone:{" "}
+            <span className="italic">
+              <a href="tel:7704857015">770.485.7015</a>
+            </span>
           </p>
           <p>
-            E-mail: <span className="italic">hello@bitmotive.com</span>
+            E-mail:{" "}
+            <span className="italic">
+              <a href="mailto:HDSales@hdfirearms.com">HDSales@hdfirearms.com</a>
+            </span>
           </p>
         </div>
         <div className="footer-chunk desktop-third mobile-whole footer-links">
           <Link to={`/`}>Shop</Link>
-          <Link to={`/`}>Support</Link>
-          <Link to={`/`}>About</Link>
+          <Link to={`/about`}>About</Link>
+          <Link to={`/contact`}>Contact</Link>
+          <Link to={`/faq`}>FAQ</Link>
+          <Link to={`/warranty`}>Warranty</Link>
+          <Link to={`/privacy`}>Privacy</Link>
+          <Link to={`/shipping-returns`}>Shipping and Returns</Link>
+          <Link to={`/cerakote`}>Cerakote</Link>
         </div>
         <div className="footer-chunk desktop-third mobile-whole">
           <h2>Follow Us</h2>

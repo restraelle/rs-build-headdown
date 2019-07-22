@@ -15,7 +15,7 @@ import Footer from "./Footer";
 import Footnote from "./Footnote";
 
 /* STATIC RESOURCES */
-import "../static/css/foundation.min.css";
+import "../static/css/foundation.css";
 import "../static/css/all.css";
 import "../static/css/main.scss";
 import Logo from "../static/img/logo.png";
@@ -32,16 +32,14 @@ class Template extends React.Component {
         <Navigation solid={!this.props.index}>
           <NavigationItem title="Shop" link="/collection/test" />
           {/* <NavigationItem title="Blog" link="/blog" /> */}
-          <NavigationItem title="Support" link="/support" />
+          {/* <NavigationItem title="Support" link="/support" /> */}
           <NavigationItem title="About" link="/about" />
           <NavigationItem title="Contact" link="/contact" />
           <NavigationItem title="FAQ" link="/faq" />
           <NavigationItem title="Warranty" link="/warranty" />
           <NavigationItem title="Privacy" link="/privacy" />
-          <NavigationItem
-            title="Shipping and Returns"
-            link="/shipping-and-returns"
-          />
+          <NavigationItem title="Shipping and Returns" link="/shipping-returns"/>
+          <NavigationItem title="Cerakote" link="/cerakote" />
         </Navigation>
 
         {this.props.children}

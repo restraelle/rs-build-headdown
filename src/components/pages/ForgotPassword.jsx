@@ -1,7 +1,7 @@
 /*
 =====================================================
 OMEGA19 Page
-Register
+Forgot Password
 =====================================================
 */
 
@@ -12,17 +12,14 @@ import { Link } from "react-router-dom";
 /* STATIC RESOURCES */
 import logo from "../../static/img/logo.png";
 
-export default class Register extends React.Component {
+class ForgotPassword extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
       items: [],
-      first_name: "",
-      last_name: "",
-      email: "",
-      password: ""
+      email: ""
     };
   }
 
@@ -34,11 +31,16 @@ export default class Register extends React.Component {
     document.body.classList.remove("signup-page");
   }
 
+  handleChange = e => {
+    const { name, type, value } = e.target;
+    const val = type === "number" ? parseFloat(value) : value;
+    this.setState({ [name]: val });
+  };
+
   render() {
     let styles = {
       textAlign: "right"
     };
-
     return (
       <Template>
         <div className="grid-container page-content signup-wrapper">
@@ -49,30 +51,8 @@ export default class Register extends React.Component {
                   <div className="grid-container signup-grid">
                     <div className="grid-x grid-padding-x">
                       <div className="large-12 cell">
-                        <h3 className="form-header">Create Account</h3>
+                        <h3 className="form-header">Reset Password</h3>
                       </div>
-                      <div className="large-12 cell">
-                        <input
-                          type="text"
-                          id="first_name"
-                          name="first_name"
-                          placeholder="First Name"
-                          required
-                          onChange={this.handleChange}
-                        />
-                      </div>
-
-                      <div className="large-12 cell">
-                        <input
-                          type="text"
-                          id="last_name"
-                          name="last_name"
-                          placeholder="Last Name"
-                          required
-                          onChange={this.handleChange}
-                        />
-                      </div>
-
                       <div className="large-12 cell">
                         <input
                           type="text"
@@ -83,31 +63,19 @@ export default class Register extends React.Component {
                           onChange={this.handleChange}
                         />
                       </div>
-
-                      <div className="large-12 cell">
-                        <input
-                          type="password"
-                          id="password"
-                          name="password"
-                          placeholder="Password"
-                          required
-                          onChange={this.handleChange}
-                        />
-                      </div>
-
                       <div className="large-12 cell">
                         <Link to={`/`}>
                           <div
                             id="loginBtn"
                             className="button expanded cta-main"
                           >
-                            Create
+                            Request Request
                           </div>
                         </Link>
                       </div>
                       <div style={styles} className="large-12 cell">
-                        <Link to={`/`}>
-                          <div id="resetBtn">Return to Store</div>
+                        <Link to={`/login`}>
+                          <div id="resetBtn">Log In</div>
                         </Link>
                       </div>
                     </div>
@@ -116,7 +84,10 @@ export default class Register extends React.Component {
               </section>
             </div>
             <div className="large-6 cell content-wrap image-container login-image">
-              <img src={logo} alt="Create Account For Head Down Firearms" />
+              <img
+                src={logo}
+                alt="Reset your password for Head Down Firearms"
+              />
             </div>
           </div>
         </div>
@@ -124,3 +95,5 @@ export default class Register extends React.Component {
     );
   }
 }
+
+export default ForgotPassword;

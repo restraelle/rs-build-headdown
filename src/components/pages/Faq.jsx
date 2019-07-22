@@ -7,11 +7,9 @@ FAQ
 
 import React, { Component } from "react";
 import Template from "../Template";
+import { Link } from "react-router-dom";
 
 class FAQ extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <Template>
@@ -41,8 +39,11 @@ class FAQ extends Component {
                       of delivery for a full refund except for firearms. We'll
                       also pay the return shipping costs if the return is a
                       result of our error (you received an incorrect or
-                      defective item, etc.). Click here to read our full Return
-                      Policy.
+                      defective item, etc.).&nbsp;
+                      <Link to={`/shipping-returns`}>
+                        Click here to read our full Return Policy
+                      </Link>
+                      .
                     </p>
                     <p>
                       You should expect to receive your refund within four weeks
@@ -101,7 +102,11 @@ class FAQ extends Component {
                       <a href="mailto:hdsales@hdfirearms.com">
                         hdsales@hdfirearms.com
                       </a>
-                      . Click here to read the full privacy policy.
+                      .&nbsp;
+                      <Link to={`/privacy`}>
+                        Click here to read the full privacy policy.
+                      </Link>
+                      .
                     </p>
                   </div>
                 </div>

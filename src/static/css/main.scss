@@ -101,6 +101,17 @@ div {
   background-color: transparent;
   color: white;
   width: 100%;
+  height: auto;
+  padding: 0;
+  line-height: 0;
+  font-size: 13px;
+  top: 2px;
+  position: relative;
+}
+.search-bar input:focus {
+  background-color: transparent;
+  box-shadow: none;
+  border-style: none;
 }
 .search-bar input::placeholder {
   color: white;
@@ -300,6 +311,7 @@ div {
 }
 .button-hero {
   margin: 10px 0px 0px 0px;
+
 }
 .button-contrast {
   background-color: #330505;
@@ -355,6 +367,12 @@ div {
   padding: 0px 25px 25px 25px;
   box-sizing: border-box;
   transition: all 0.25s;
+
+  a:hover,
+  a:focus,
+  a:visited {
+    color: #0a0a0a;
+  }
 }
 .product-item-box {
   margin: 20px;
@@ -397,6 +415,7 @@ div {
   text-align: center;
   user-select: none;
   -moz-user-select: none;
+  padding: 10px 0px 0px 0px;
 }
 .product-item__price {
   color: grey;
@@ -418,7 +437,6 @@ div {
   margin: 0px 0px 10px 0px;
 }
 .footer h4 {
-  text-transform: uppercase;
   margin: 10px 0px;
 }
 
@@ -1228,6 +1246,10 @@ footer #mce-EMAIL {
   text-transform: uppercase;
 }
 
+.cta-main:hover {
+  background-color: darken($colorPrimary, 10%);
+}
+
 /*================ Contact Page ================*/
 .contact-logo {
   display: block;
@@ -1242,6 +1264,10 @@ footer #mce-EMAIL {
   border-radius: 3px;
   margin-top: 2em;
   margin-bottom: 5em;
+
+  a {
+    color: #2980b9;
+  }
 
   .faq-wrapper {
     padding: 15px;
@@ -1262,5 +1288,156 @@ footer #mce-EMAIL {
     padding: 15px;
     margin-bottom: 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/*================ Warranty Page ================*/
+.warranty-page {
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+  h1 {
+    display: inline-block;
+    border-bottom: 2px solid $colorPrimary;
+    margin-bottom: 30px;
+  }
+}
+
+/*================ About Page ================*/
+.about-page {
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+  h1 {
+    display: inline-block;
+    border-bottom: 2px solid $colorPrimary;
+    margin-bottom: 30px;
+  }
+}
+
+/*================ Become Dealer Page ================*/
+.become-dealer-page {
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+  h1 {
+    display: inline-block;
+    border-bottom: 2px solid $colorPrimary;
+    margin-bottom: 30px;
+  }
+  a {
+    color: #2980b9;
+  }
+
+  ul,
+  ol {
+    margin-top: -10px;
+    margin-bottom: 30px;
+  }
+}
+
+/*================ Cerakote Page ================*/
+.cerakote-page {
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+  h1 {
+    display: inline-block;
+    border-bottom: 2px solid $colorPrimary;
+    margin-bottom: 30px;
+  }
+
+  .cerakote-logo {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .featured-product {
+    margin-top: 40px;
+
+    img {
+      box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+  }
+}
+
+/*================ Shipping & Returns Page ================*/
+.shipping-returns-page {
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+  a {
+    color: #2980b9;
+  }
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    display: inline-block;
+    border-bottom: 2px solid $colorPrimary;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: $colorPrimary;
+  }
+}
+
+/*================ Shipping & Returns Page ================*/
+.privacy-page {
+  margin-top: 2em;
+  margin-bottom: 5em;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    display: inline-block;
+    border-bottom: 2px solid $colorPrimary;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: $colorPrimary;
+    font-size: 20px;
+  }
+}
+
+/*================ Edits to home page ================*/
+/* hero */
+.hero-basic-content {
+  h4,
+  h1 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .button-hero {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background-color: $colorPrimary;
+      color: white;
+    }
+  }
+}
+
+/* centering 3 main collection titles */
+.CollectionSpotlightItem {
+  .featured-collections-box {
+    position: relative;
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      text-shadow: 0 0 7px #222;
+    }
   }
 }
